@@ -23,7 +23,7 @@
 
 9. Далее приводим файл /etc/pam_script к следующему виду (у файла должны быть права на исполнение):  
 > #!/bin/bash  
-> if [[ `grep $PAM_USER /etc/group | grep 'admin'` ]]  
+> if [[ \`grep $PAM_USER /etc/group | grep 'admin'` ]]  
 > then  
 > exit 0  
 > fi  
